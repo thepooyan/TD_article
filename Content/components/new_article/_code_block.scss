@@ -2,6 +2,7 @@
     --background: #0F172A;
     --code: #C9CFD8;
     --copy: white;
+    --success: rgb(60, 192, 60);
 
     --header: #1E293B;
     --header-color: #94A3B8;
@@ -10,7 +11,6 @@
     --dot2: #FBBF24;
     --dot3: #34D399;
 
-    direction: ltr;
     background-color: var(--background);
     color: var(--code);
     border-radius: 1rem;
@@ -57,15 +57,20 @@
             display: flex;
             align-items: center;
             gap: .5rem;
+            &.success {
+                color: var(--success);
+            }
         }
     }
 
     .footer {
         padding-inline: 1rem;
         font-size: var(--text-xs);
+        text-align: left;
     }
 
     pre {
         padding: 1rem;
+        direction: ltr;
     }
 }
