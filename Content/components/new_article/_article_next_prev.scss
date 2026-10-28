@@ -11,7 +11,11 @@
         gap: 1rem;
         font-size: var(--text-md);
         color: #363636;
+        transition: scale .1s;
 
+        &:hover {
+            scale: 1.05;
+        }
 
         svg {
             color: var(--color);
