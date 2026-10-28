@@ -1,5 +1,9 @@
+@use "./Content/source/font-sizes";
 @use "./Content/components/new_article/article_head";
+@use "./Content/components/new_article/new_article_variables";
+@use "./Content/components/new_article/new_article_ui";
 @use "./Content/components/new_article/minimal_breadcrumb";
+@import "./Content/components/shared/_utilityClasses.css";
 
 body {
     background-color: white;

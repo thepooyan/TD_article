@@ -4,4 +4,30 @@
     padding: 24px;
     background-color: #B4E2FF20;
     border-radius: 16px;
+
+    .cate {
+        background-color: var(--color-td);
+        color: var(--color-td-foreground);
+
+        width: max-content;
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-size: var(--text-xs);
+        font-weight: bold;
+    }
+
+    .title {
+    }
+    .desc {
+    }
+
+    .btns {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .footer {
+        display: flex;
+        gap: 1rem;
+    }
 }

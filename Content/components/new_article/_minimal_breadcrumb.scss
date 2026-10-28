@@ -1,20 +1,22 @@
 .minimal_breadcrumb {
     --color:#667989; 
+    --hover-color: var(--primary);
     --gap: .4rem;
     display: flex;
     align-items: center;
     gap: var(--gap);
     color: var(--color);
-    transition: all 2s;
 
     .item {
+        transition: color .2s;
+
         &:not(:first-child)::before {
             content: "/";
             padding-left: var(--gap);
         }
 
         &:hover {
-            color: red;
+            color: var(--hover-color);
         }
     }
 }
