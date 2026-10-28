@@ -2,10 +2,19 @@
     background-color: var(--primary);
     color: var(--primary-foreground);
     width: max-content;
-    padding: 4px;
+    padding: .25rem;
     border-radius: 8px;
     font-weight: var(--weight_sm);
     font-size: var(--text-md);
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    cursor: pointer;
+    transition: translate .2s;
+
+    &:hover {
+        translate: 0 -2px;
+    }
 
     &.outline {
         background-color: transparent;

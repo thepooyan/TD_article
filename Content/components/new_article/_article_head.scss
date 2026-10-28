@@ -1,16 +1,20 @@
 .article_head {
     background-image: url(https://tahlildadeh.com/Content/icons/new_article/article_head.svg);
     background-repeat: no-repeat;
-    padding: 24px;
+    padding: 1.5rem;
     background-color: #B4E2FF20;
     border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    
 
     .cate {
         background-color: var(--color-td);
         color: var(--color-td-foreground);
 
         width: max-content;
-        padding: 4px 8px;
+        padding: 0 .5rem;
         border-radius: 4px;
         font-size: var(--text-xs);
         font-weight: bold;
@@ -29,5 +33,15 @@
     .footer {
         display: flex;
         gap: 1rem;
+        border-top: 1px solid var(--color-gray-200);
+        padding-top: 1rem;
+        align-items: center;
+        width: 50%;
+
+        .item {
+            display: flex;
+            align-items: center;
+            gap: .4rem;
+        }
     }
 }
