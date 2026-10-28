@@ -40,4 +40,12 @@ if (article_page) {
             }, 2000);
         }
     })
+    
+    const copy_page = article_page.querySelector(".article_head .js-copyPage")
+    if (copy_page) {
+        copy_page.onclick = () => {
+            navigator.clipboard.writeText(window.location.href)
+        }
+    }
+
 } else console.error("#article_page not found. probably wrong js file imported.")
