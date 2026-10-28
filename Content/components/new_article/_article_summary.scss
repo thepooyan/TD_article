@@ -11,17 +11,29 @@ details.article_summary {
             padding-bottom: 1rem;
             margin-bottom: 1rem;
             border-color: var(--color-gray-200);
+            .chevron {
+                rotate: 0deg;
+            }
         }
     }
 
     .title {
-        display: flex;
-        gap: .5rem;
         color: var(--color);
         font-size: var(--text-md);
         font-weight: var(--weight_lg);
         border-bottom: 3px solid transparent ;
         transition: padding .2s, margin .2s;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .right {
+            display: flex;
+            gap: .5rem;
+        }
+        .chevron {
+            rotate: 180deg;
+            transition: rotate .2s;
+        }
     }
     .links {
         display: grid;
