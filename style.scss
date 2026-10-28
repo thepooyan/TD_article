@@ -4,6 +4,7 @@
 @use "./Content/components/new_article/article_content";
 @use "./Content/components/new_article/new_article_ui";
 @use "./Content/components/new_article/minimal_breadcrumb";
+@use "./Content/components/new_article/article_next_prev";
 @import "./Content/components/shared/_utilityClasses.css";
 
 body {

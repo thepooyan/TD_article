@@ -1,0 +1,23 @@
+.article_next_prev {
+    --color: var(--color-td);
+    --colorSoft: color-mix(in srgb, var(--color), transparent 80%) ;
+    display: flex;
+    justify-content: space-between;
+
+    .item {
+        background: none;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: var(--text-md);
+        color: #363636;
+
+
+        svg {
+            color: var(--color);
+        }
+        &:nth-of-type(2) {
+            text-align: left;
+        }
+    }
+}
