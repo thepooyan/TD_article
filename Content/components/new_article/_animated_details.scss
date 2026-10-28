@@ -1,0 +1,20 @@
+
+details.animated {
+    interpolate-size: allow-keywords;
+
+    &[open] {
+        &::details-content {
+            height: auto;
+        }
+    }
+
+    &::details-content {
+        height: 0;
+        transition: height .2s, content-visibility .2s allow-discrete;
+        overflow: clip;
+    }
+
+    summary {
+        user-select: none;
+    }
+}
