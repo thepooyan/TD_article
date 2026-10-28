@@ -363,6 +363,17 @@
 
 
   <main id="article_page">
+    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" style="display: none;">
+      <symbol id="copy-icon">
+        <path d="M0 0h24v24H0z" fill="none" />
+        <g fill="none">
+          <path fill="currentColor" d="M22.24 7.92c0-2.83 0-4.24-.88-5.12s-2.3-.88-5.12-.88H10.8A3 3 0 0 0 7.93 5.1v.26a3 3 0 0 0 3.14 2.85h.79c.78 0 1.16 0 1.5.08a3 3 0 0 1 2.14 1.88c.12.32.17.7.27 1.48l.24 1.89l.03.2a3 3 0 0 0 3.07 2.52h.22a3 3 0 0 0 2.9-2.9V7.92" opacity=".2" />
+          <rect width="14.34" height="14.34" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" rx="3" transform="matrix(1 0 0 -1 1.76 22.27)" />
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7.9 7.59c0-2.7 0-4.04.8-4.9l.15-.16c.87-.8 2.21-.8 4.9-.8h2.49c2.82 0 4.24 0 5.12.88s.88 2.3.88 5.12v2.45c0 2.72 0 4.09-.82 4.95l-.12.12c-.87.82-2.23.82-4.96.82" />
+        </g>
+      </symbol>
+    </svg>
+
 
     <div class="minimal_breadcrumb">
       <a class="item" href="#home">
@@ -477,14 +488,24 @@
             ویژگی Padding در CSS فاصله بین محتوای یک عنصر و حاشیه داخلی آن را مشخص می‌کند. با تغییر این ویژگی می‌توان فضای اطراف متن یا تصاویر داخل یک کادر را کنترل کرد.
           </p>
           <div class="fakeImage"></div>
-          <pre class="code_block">
-          <code>
-const a = 12;
-for () {
-  a++
-}
-          </code>
-          </pre>
+          <div class="code_block">
+            <div class="header">
+              <div class="dots"></div>
+              <button class="copy">
+                کپی کد
+                <svg width="24" height="24" fill="currentColor">
+                  <use href="#copy-icon" />          
+                </svg>
+              </button>
+            </div>
+            <pre><code>const a = 12;
+  for () {
+    a++
+  }
+console.log("a")
+</code></pre>
+            <div class="footer">HTML</div>
+          </div>
         </div>
         <div class="article_next_prev">
           <button class="item">
