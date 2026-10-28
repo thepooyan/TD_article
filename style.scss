@@ -6,6 +6,7 @@
 @use "./Content/components/new_article/minimal_breadcrumb";
 @use "./Content/components/new_article/article_next_prev";
 @use "./Content/components/new_article/code_block";
+@use "./Content/components/new_article/article_summary";
 @import "./Content/components/shared/_utilityClasses.css";
 
 body {

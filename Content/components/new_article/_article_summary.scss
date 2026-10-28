@@ -1,0 +1,37 @@
+.article_summary {
+    --color: #2086C8;
+    --color-bg: color-mix(in srgb, var(--color) , transparent 90%);
+    border: 2px solid var(--color);
+    border-radius: var(--page-border-radius);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+
+    .title {
+        display: flex;
+        gap: .5rem;
+        color: var(--color);
+        font-size: var(--text-md);
+        font-weight: var(--weight_lg);
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        border-bottom: 3px solid var(--color-gray-200);
+    }
+    .links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        > * {
+            font-size: var(--text-sm);
+            display: block;
+            padding: .25rem;
+            border-radius: .25rem;
+            transition: background-color .2s;
+
+            &:hover {
+                color: var(--color);
+                background-color: var(--color-bg);
+                font-weight: var(--weight_lg);
+            }
+        }
+    }
+}
