@@ -10,7 +10,7 @@
     align-items: center;
     gap: .3rem;
     cursor: pointer;
-    transition: translate .2s;
+    transition: translate .2s, background-color .2s;
 
     &:hover {
         translate: 0 -2px;
@@ -20,5 +20,15 @@
         background-color: transparent;
         border: 1px solid var(--primary);
         color: var(--primary);
+    }
+
+    &.ghost {
+        background-color: transparent;
+        color: var(--primary);
+        translate: none;
+
+        &:hover {
+            background-color: #9d9d9d47;
+        }
     }
 }
