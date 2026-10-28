@@ -3,6 +3,26 @@ const article_page = document.getElementById("article_page")
 if (article_page) {
     const article_content = article_page.querySelector(".article_content")
 
+    //summary
+    const summary = article_content.querySelector(".js-summary")
+    const summary_topics = summary.querySelector(".js-topics")
+    const summary_titles = article_content.querySelectorAll(".js-title")
+
+    if (summary_titles.length === 0) summary.remove()
+    
+    const keyword = "summary-"
+    summary_titles.forEach((title, i) => {
+        title.id = keyword + i;
+    })
+    const elements = Array.from(summary_titles).map((t,i) => {
+        const el = document.createElement("a")
+        el.innerText = t.innerText
+        el.href = "#" + keyword + i
+        return el
+    })
+    elements.forEach(e => summary_topics.appendChild(e))
+
+    //code blocks
     const code_blocks = article_content.querySelectorAll(".code_block")
     code_blocks.forEach(block => {
         const copy_btn = block.querySelector(".js-copy")
