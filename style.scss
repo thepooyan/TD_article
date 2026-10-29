@@ -44,7 +44,7 @@ body {
         }
     }
     @include v.media(v.$tablet) {
-        background-color: red;
+        
     }
     @include v.media(v.$mobile) {
         background-color: yellow;
