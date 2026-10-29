@@ -45,6 +45,9 @@
     }
 
     @include v.media(v.$laptop) {
+        background-image: linear-gradient(to top right, transparent 0%, #E9F3FA 50%), url(https://tahlildadeh.com/Content/icons/new_article/article_head.svg);
+        background-size: cover;
+
         .footer {
             width: 100%;
         }
