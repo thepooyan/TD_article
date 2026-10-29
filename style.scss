@@ -43,11 +43,8 @@ body {
             grid-template-columns: 1fr;
         }
     }
-    @include v.media(v.$tablet) {
-        
-    }
     @include v.media(v.$mobile) {
-        background-color: yellow;
+        
     }
 }
 

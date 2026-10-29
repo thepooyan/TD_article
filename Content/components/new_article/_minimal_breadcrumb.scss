@@ -3,6 +3,7 @@
     --hover-color: var(--primary);
     --gap: .4rem;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: var(--gap);
     color: var(--color);
