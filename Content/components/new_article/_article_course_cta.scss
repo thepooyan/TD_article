@@ -1,8 +1,15 @@
 .article_course_cta {
+    --eyebrow: var(--primary);
+    --title: #363636;
     height: 266px; // REMOVE THIS !!!
     border-radius: var(--page-border-radius);
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+    padding-inline: 1rem;
 
     &::before {
         content: "";
@@ -16,5 +23,40 @@
             linear-gradient(to top right, transparent 0%, #E9F3FA 50%),
             url(https://tahlildadeh.com/Content/icons/new_article/article_head.svg);
         background-size: 187%;
+    }
+
+    .eyebrow {
+        color: var(--eyebrow);
+        font-size: var(--text-sm);
+        font-weight: var(--weight_lg);
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+    }
+    .title {
+        color: var(--title);
+        font-size: var(--text-lg);
+        font-weight: var(--weight_lg);
+    }
+    .desc {
+        color: color-mix(in srgb, var(--title), transparent 30%);
+        font-size: var(--text-sm);
+        line-height: 1.5;
+    }
+    .btn {
+        background-color: var(--eyebrow);
+        color: white;
+        border-radius: 8px;
+        font-size: var(--text-xs);
+        width: 100%;
+        font-weight: var(--weight_lg);
+        padding: 8px 10px;
+        cursor: pointer;
+
+        &.alt {
+            background-color: white;
+            color: var(--eyebrow);
+            border: 2px solid var(--eyebrow);
+        }
     }
 }
