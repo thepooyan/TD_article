@@ -55,6 +55,7 @@
             border-radius: 4px;
             padding-right: 0;
             font-size: var(--text-sm);
+            line-height: 1.5;
 
             &:hover {
                 background-color: color-mix(in srgb, var(--heighlight), transparent 95%);
