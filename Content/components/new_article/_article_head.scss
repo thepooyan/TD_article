@@ -1,3 +1,5 @@
+@use "../../source/Variables" as v;
+
 .article_head {
     background-image: url(https://tahlildadeh.com/Content/icons/new_article/article_head.svg);
     background-repeat: no-repeat;
@@ -38,5 +40,17 @@
             align-items: center;
             gap: .4rem;
         }
+    }
+
+    @include v.media(v.$laptop) {
+        .footer {
+            width: 100%;
+        }
+    }
+    @include v.media(v.$tablet) {
+        
+    }
+    @include v.media(v.$mobile) {
+        
     }
 }

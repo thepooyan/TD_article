@@ -8,6 +8,8 @@
     flex-direction: column;
     gap: .5rem;
     padding: 1rem;
+    width: 320px;
+    margin: auto;
 
     &::before {
         content: "";

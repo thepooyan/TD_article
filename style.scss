@@ -1,3 +1,4 @@
+@use "./Content/source/Variables" as v;
 @use "./Content/source/font-sizes";
 @use "./Content/components/new_article/article_head";
 @use "./Content/components/new_article/new_article_variables";
@@ -23,7 +24,7 @@ body {
     flex-direction: column;
     --page-gap: 1rem;
     gap: var(--page-gap);
-    padding-block: var(--page-gap);
+    padding: var(--page-gap);
 
     .columns {
         display: grid;
@@ -35,6 +36,18 @@ body {
                 margin-bottom: var(--page-gap);
             }
         }
+    }
+
+    @include v.media(v.$laptop) {
+        .columns {
+            grid-template-columns: 1fr;
+        }
+    }
+    @include v.media(v.$tablet) {
+        background-color: red;
+    }
+    @include v.media(v.$mobile) {
+        background-color: yellow;
     }
 }
 
