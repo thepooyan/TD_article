@@ -12,6 +12,16 @@
     box-shadow: 0 -5px 6px #b9b9b91f;
     border-radius: 8px 8px 0 0;
 
+    .max-two-lines {
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        overflow: hidden;
+        display: -webkit-box;
+    }
+    .w-full {
+        width: 100%;
+    }
 
     .item {
         background: none;
@@ -21,6 +31,8 @@
         font-size: var(--text-md);
         color: #363636;
         transition: scale .1s;
+        flex-basis: 50%;
+        text-align: center;
 
         &:hover {
             scale: 1.05;
@@ -28,9 +40,10 @@
 
         svg {
             color: var(--color);
+            flex-shrink: 0;
         }
         &:nth-of-type(2) {
-            text-align: left;
+            justify-content: flex-end;
         }
     }
 
@@ -44,6 +57,5 @@
                 width: 2.3rem;
             }
         }
-
     }
 }
