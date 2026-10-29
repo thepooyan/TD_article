@@ -1,20 +1,18 @@
 .article_course_cta {
     --eyebrow: var(--primary);
     --title: #363636;
-    height: 266px; // REMOVE THIS !!!
     border-radius: var(--page-border-radius);
     position: relative;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: .5rem;
-    padding-inline: 1rem;
+    padding: 1rem;
 
     &::before {
         content: "";
         position: absolute;
-        inset: -12%;
+        inset: -15%;
         transform: rotate(15deg);
         z-index: -1;
         background-repeat: no-repeat;
