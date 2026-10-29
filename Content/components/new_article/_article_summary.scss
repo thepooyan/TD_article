@@ -1,3 +1,5 @@
+@use "../../source/Variables" as v;
+
 details.article_summary {
     --color: #2086C8;
     --color-bg: color-mix(in srgb, var(--color), transparent 90%);
@@ -76,7 +78,9 @@ details.article_summary {
         }
     }
 
-    @container (max-width: 500px) {
-        display: none;
+    @container (max-width: 800px) {
+        .links {
+            grid-template-columns: 1fr;
+        }
     }
 }

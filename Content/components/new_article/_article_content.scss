@@ -1,6 +1,7 @@
 .article_content {
     font-size: var(--text-md);
     color: #363636;
+    container-type: inline-size;
 
     > * {
         margin-bottom: 1.5rem;
