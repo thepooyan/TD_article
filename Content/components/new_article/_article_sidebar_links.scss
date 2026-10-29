@@ -21,17 +21,20 @@
         flex-direction: column;
         padding: 1rem;
 
-        >* {
+        > * {
             padding: 0.2rem 0.8rem;
             border-right: 3px solid transparent ;
             transition: background .2s, border-color .2s, padding .2s;
             border-radius: 4px;
             padding-right: 0;
+            font-size: var(--text-sm);
 
             &:hover {
                 background-color: color-mix(in srgb, var(--heighlight), transparent 95%);
                 border-color: var(--heighlight);
                 padding-right: .8rem;
+                font-weight: var(--weight_lg);
+                color: var(--heighlight);
             }
         }
     }
