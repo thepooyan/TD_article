@@ -27,6 +27,12 @@ body {
         display: grid;
         grid-template-columns: auto 320px;
         gap: var(--page-gap);
+
+        .space-y {
+            > * {
+                margin-bottom: var(--page-gap);
+            }
+        }
     }
 }
 
