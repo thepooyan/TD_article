@@ -44,15 +44,30 @@ details.article_summary {
 
         > * {
             font-size: var(--text-sm);
-            display: block;
+            display: flex;
+            align-items: center;
+            gap: .2rem;
             padding: 0.1rem 0.6rem;
             border-radius: .25rem;
-            transition: background-color .2s;
+            transition: background-color .2s, translate .2s;
 
             &:hover {
                 color: var(--color);
                 background-color: var(--color-bg);
                 font-weight: var(--weight_lg);
+                translate: -4px;
+
+                &::before {
+                    background-color: var(--color);
+                }
+            }
+            &::before {
+                content: "";
+                width: 1.3rem;
+                aspect-ratio: 1;
+                display: block;
+                background-color: var(--color-gray-700);
+                mask: url(https://tahlildadeh.com/Content/icons/new_article/chevron-left.svg) center / contain;
             }
         }
     }
