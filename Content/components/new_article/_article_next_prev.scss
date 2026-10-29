@@ -1,3 +1,5 @@
+@use "../../source/Variables" as v;
+
 .article_next_prev {
     --color: var(--color-td);
     --colorSoft: color-mix(in srgb, var(--color), transparent 80%) ;
@@ -30,5 +32,18 @@
         &:nth-of-type(2) {
             text-align: left;
         }
+    }
+
+    @include v.media(v.$tablet) {
+        padding: .8rem;
+        .item {
+            font-size: var(--text-sm);
+            gap: .3rem;
+            
+            svg {
+                width: 2.3rem;
+            }
+        }
+
     }
 }

@@ -46,9 +46,6 @@ body {
             grid-template-columns: 1fr;
         }
     }
-    @include v.media(v.$mobile) {
-        
-    }
 }
 
 .dummy {
