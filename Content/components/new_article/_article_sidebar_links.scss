@@ -5,6 +5,30 @@
     border: 1px solid var(--color);
     overflow: hidden;
 
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: #64748b #e2e8f0;
+    }
+
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #e2e8f0;
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #64748b;
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #475569;
+    }
+
     .head {
         background-color: var(--color);
         color: white;
