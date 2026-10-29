@@ -22,18 +22,21 @@ body {
     margin: auto;
     display: flex;
     flex-direction: column;
-    --page-gap: 1rem;
-    gap: var(--page-gap);
-    padding: var(--page-gap);
+    --page-gap-x: 1rem;
+    --page-gap-y: 1rem;
+    row-gap: var(--page-gap-y);
+    column-gap: var(--page-gap-x);
+    padding: var(--page-gap-y) var(--page-gap-x);
 
     .columns {
         display: grid;
         grid-template-columns: auto 320px;
-        gap: var(--page-gap);
+        row-gap: var(--page-gap-y);
+        column-gap: var(--page-gap-x);
 
         .space-y {
             > * {
-                margin-bottom: var(--page-gap);
+                margin-bottom: var(--page-gap-y);
             }
         }
     }
