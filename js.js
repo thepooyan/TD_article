@@ -48,4 +48,16 @@ if (article_page) {
         }
     }
 
+    const anchors = article_page.querySelectorAll('a[href^="#"]')
+    anchors.forEach(anchor => {
+        anchor.onclick = e => {
+            e.preventDefault()
+            const id = anchor.getAttribute("href").substring(1)
+            if (!id) return
+            const target = document.getElementById(id)
+            if (!target) return
+            target.scrollIntoView()
+        }
+    })
+
 } else console.error("#article_page not found. probably wrong js file imported.")
