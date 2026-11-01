@@ -60,4 +60,14 @@ if (article_page) {
         }
     })
 
+    const next_prev = article_page.querySelector(".article_next_prev")
+    if (next_prev) {
+
+        window.onscroll = () => {
+            if (next_prev.getBoundingClientRect().bottom > (window.innerHeight-1) ) 
+                next_prev.classList.add("stuck")
+            else
+                next_prev.classList.remove("stuck")
+        }
+    }
 } else console.error("#article_page not found. probably wrong js file imported.")
